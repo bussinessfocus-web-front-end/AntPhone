@@ -3,6 +3,7 @@
  */
 import React from "react";
 import { TabBar, Card, WingBlank, WhiteSpace } from 'antd-mobile';
+import config from "../config"
 
 class AntPage extends React.Component{
     constructor(props){
@@ -12,6 +13,11 @@ class AntPage extends React.Component{
             hidden: false,
             fullScreen: false,
         }
+    }
+
+    //组件挂载方法
+    componentDidMount(){
+        console.log(config.baseUrl);
     }
 
     renderContent(pageText) {

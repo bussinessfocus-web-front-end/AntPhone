@@ -10,9 +10,10 @@
   },
   "scripts": {
     "start": "react-app-rewired start",
-    "build": "react-app-rewired build",
+    "build": "react-app-rewired build --REACT_APP_Prd",
     "test": "react-app-rewired test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "buildTest": "set RUN_ENV=test && react-app-rewired build"
   },
   "eslintConfig": {
     "extends": "react-app"
